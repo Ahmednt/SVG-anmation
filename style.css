@@ -1,0 +1,126 @@
+*
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #dfdfdf;
+}
+#ganit-wheel
+{
+  animation: wheel 5s linear infinite;
+  transform-origin: center;
+  transform-box:fill-box;
+}
+@keyframes wheel {
+ from{
+   transform: rotateZ(360deg);
+
+ }
+ to {
+   transform: rotateZ(0deg);
+ }
+
+}
+
+#whael-cabin
+{
+  animation: cabin 1s linear infinite;
+  transform-origin: top;
+
+}
+@keyframes cabin {
+ 0%
+ 100%{
+   transform: rotate(2deg);
+
+ }
+ 50% {
+   transform: rotate(-2deg);
+ }
+
+}
+
+
+#right-tree,
+#left-tree
+{
+  animation: tree 2s linear infinite;
+  transform-origin: bottom;
+  transform-box: fill-box;
+
+}
+@keyframes tree {
+ 0%
+ 100%{
+   transform: rotate(2deg);
+
+ }
+ 50% {
+   transform: rotate(-2deg);
+ }
+
+}
+#ballon-man
+{
+  animation: man 3s linear infinite;
+   transform: fill-box;
+}
+@keyframes man {
+  0%,
+  100%
+  {
+    transform: translateX(10px);
+  }
+  50%
+  {
+    transform: translateX(0px);
+
+  }
+
+}
+
+#ballon-man2
+{
+  animation: man2 3s linear infinite;
+   transform: fill-box;
+}
+@keyframes man2 {
+  0%,
+  100%
+  {
+    transform: translateX(-28px);
+  }
+  50%
+  {
+    transform: translateX(0px);
+
+  }
+}
+#ballons
+{
+  animation: ballons 2s linear infinite;
+   transform: fill-box;
+   transform-origin: bottom;
+}
+@keyframes ballons {
+  0%,
+  100%
+  {
+    transform: rotate(3deg);
+    transform: scale(1.1);
+  }
+  50%
+  {
+    transform: rotate(-3px);
+    transform: scale(1);
+
+
+  }
